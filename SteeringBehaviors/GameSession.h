@@ -1,10 +1,12 @@
 #pragma once
 #include "Window.h"
+#include "Ship.h"
 
 class GameSession
 {
 private:
-	sf::View camera;
+	sf::View* camera;
+	Ship* ship;
 public:
 	GameSession();
 
@@ -12,4 +14,6 @@ public:
 	void Draw();
 
 	~GameSession();
+
+	sf::Vector2f* Mouse;
 };
