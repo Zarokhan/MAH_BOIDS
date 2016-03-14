@@ -4,6 +4,7 @@
 
 #define PI 3.14159265359
 #define DEGREES_PER_RADIAN	57.29577951f
+#define MIN(a,b)    (((a) < (b)) ? (a) : (b))
 
 namespace utils
 {

@@ -1,6 +1,8 @@
 #pragma once
-#include "../SteeringBehavior.h"
 #include "../../Window.h"
+#include "../SteeringBehavior.h"
+
+class SteeringControl;
 
 class SteerApproach : public SteeringBehavior
 {

@@ -4,11 +4,13 @@
 
 sf::RenderWindow* Window;
 GameSession* Session;
+sf::Vector2f* Mouse;
 
 int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszArgument, int nCmdShow)
 {
 	Window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_TITLE);
 	Session = new GameSession();
+	Mouse = new sf::Vector2f();
 
 	sf::Clock clock;
 	sf::Time deltaTime = sf::Time::Zero;

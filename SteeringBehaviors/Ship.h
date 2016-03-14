@@ -11,4 +11,6 @@ public:
 
 	sf::Vector2f velocity;
 	float maxSpeed;
+
+	void ApplyForce(const sf::Vector2f& force);
 };

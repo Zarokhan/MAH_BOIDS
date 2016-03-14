@@ -1,10 +1,11 @@
 #pragma once
-#include "../Window.h"
-#include "SteeringControl.h"
+#include "SFML\Graphics.hpp"
 #include "SteeringBehavior.h"
 #include <vector>
 #include <ctime>
 #include <cstdlib>
+
+class SteeringControl;
 
 class SteeringBehaviorManager
 {

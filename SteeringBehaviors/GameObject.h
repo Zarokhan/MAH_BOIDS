@@ -1,5 +1,5 @@
 #pragma once
-#include "Window.h"
+#include "SFML\Graphics.hpp"
 
 class GameObject : public sf::Sprite
 {
@@ -13,10 +13,10 @@ public:
 		texture.setSmooth(true);
 		setTexture(texture, true);
 
-		setOrigin(texture.getSize().x / 2, texture.getSize().y / 2);
+		setOrigin(texture.getSize().x / 2, texture.getSize().y / 2); 
 	}
 
-	virtual void Update(float dt) = 0;
+	virtual void Update(float dt) {}
 
 	virtual ~GameObject() {}
 };

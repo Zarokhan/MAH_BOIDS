@@ -8,3 +8,4 @@
 #define CAMERA_HEIGHT 1080
 
 extern sf::RenderWindow* Window;
+extern sf::Vector2f* Mouse;

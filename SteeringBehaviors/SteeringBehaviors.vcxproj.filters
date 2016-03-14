@@ -33,6 +33,12 @@
     <ClCompile Include="BOIDS\States\SteerApproach.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BOIDS\States\SteerWander.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BOIDS\States\SteerArrive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameSession.h">
@@ -60,6 +66,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BOIDS\States\SteerApproach.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BOIDS\States\SteerWander.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BOIDS\States\SteerArrive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,15 +1,13 @@
 #pragma once
-#include <string>
 #include "SteeringControl.h"
 #include "Utils.h"
 
 class SteeringBehavior
 {
 public:
-	SteeringBehavior(SteeringControl* control, char* name = NULL)
+	SteeringBehavior(SteeringControl* control, char* name = NULL) : parent(control)
 	{
-		memcpy(this->name, name, strlen(name) + 1);
-		parent = control;
+		//memcpy(this->name, name, strlen(name) + 1);
 		disable = false;
 		lastForceMagApplied = 0.f;
 	}

@@ -1,6 +1,7 @@
 #pragma once
 #include "../Ship.h"
-#include "SteeringBehaviorManager.h"
+
+class SteeringBehaviorManager;
 
 class SteeringControl
 {
@@ -15,6 +16,5 @@ public:
 
 	Ship* ship;
 protected:
-	SteeringBehaviorManager* behaviorManager;
-
+	SteeringBehaviorManager* manager;
 };

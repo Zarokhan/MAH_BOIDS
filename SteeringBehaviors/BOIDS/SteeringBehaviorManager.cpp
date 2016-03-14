@@ -4,6 +4,7 @@ SteeringBehaviorManager::SteeringBehaviorManager(SteeringControl * control)
 {
 	this->parent = control;
 	std::srand(std::time(0));
+	maxSteeringForce = 100;
 }
 
 void SteeringBehaviorManager::Update(float dt)
@@ -47,6 +48,7 @@ void SteeringBehaviorManager::Update(float dt)
 
 void SteeringBehaviorManager::AddBehaviour(SteeringBehavior* behavior)
 {
+	behaviors.push_back(behavior);
 }
 
 void SteeringBehaviorManager::SetupBehavior(int behaviorIndex, float weight, float probability, bool disable)

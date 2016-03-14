@@ -144,6 +144,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BOIDS\States\SteerApproach.cpp" />
+    <ClCompile Include="BOIDS\States\SteerArrive.cpp" />
+    <ClCompile Include="BOIDS\States\SteerWander.cpp" />
     <ClCompile Include="BOIDS\SteeringBehaviorManager.cpp" />
     <ClCompile Include="BOIDS\SteeringControl.cpp" />
     <ClCompile Include="GameSession.cpp" />
@@ -152,6 +154,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BOIDS\States\SteerApproach.h" />
+    <ClInclude Include="BOIDS\States\SteerArrive.h" />
+    <ClInclude Include="BOIDS\States\SteerWander.h" />
     <ClInclude Include="BOIDS\SteeringBehavior.h" />
     <ClInclude Include="BOIDS\SteeringBehaviorManager.h" />
     <ClInclude Include="BOIDS\SteeringControl.h" />
