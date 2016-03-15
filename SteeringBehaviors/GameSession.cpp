@@ -2,6 +2,7 @@
 
 GameSession::GameSession()
 {
+	utils::RandSeed();
 	// -------------------
 	bg = new GameObject("../Assets/bg.png");
 	bg->setPosition(CAMERA_WIDTH / 2, CAMERA_HEIGHT / 2);

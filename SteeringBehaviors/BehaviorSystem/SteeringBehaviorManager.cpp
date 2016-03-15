@@ -3,7 +3,6 @@
 SteeringBehaviorManager::SteeringBehaviorManager(SteeringControl * control)
 {
 	this->parent = control;
-	std::srand(std::time(0));
 	maxSteeringForce = 100;
 }
 
@@ -93,7 +92,7 @@ bool SteeringBehaviorManager::CombineForcePrioritySum(sf::Vector2f & steeringFor
 bool SteeringBehaviorManager::CombineForcePriorityDithered(sf::Vector2f & steeringForce, float weight, float randChance)
 {
 	bool retVal = true;
-	if (randflt() < randChance)
+	if (utils::randflt() < randChance)
 	{
 		if (utils::VectorLenght(steeringForce))
 		{

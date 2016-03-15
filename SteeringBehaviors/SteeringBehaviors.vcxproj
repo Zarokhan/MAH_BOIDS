@@ -143,23 +143,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BOIDS\States\SteerApproach.cpp" />
-    <ClCompile Include="BOIDS\States\SteerArrive.cpp" />
-    <ClCompile Include="BOIDS\States\SteerWander.cpp" />
-    <ClCompile Include="BOIDS\SteeringBehaviorManager.cpp" />
-    <ClCompile Include="BOIDS\SteeringControl.cpp" />
+    <ClCompile Include="BehaviorSystem\States\SteerApproach.cpp" />
+    <ClCompile Include="BehaviorSystem\States\SteerArrive.cpp" />
+    <ClCompile Include="BehaviorSystem\States\SteerWander.cpp" />
+    <ClCompile Include="BehaviorSystem\SteeringBehaviorManager.cpp" />
+    <ClCompile Include="BehaviorSystem\SteeringControl.cpp" />
     <ClCompile Include="GameSession.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BOIDS\States\SteerApproach.h" />
-    <ClInclude Include="BOIDS\States\SteerArrive.h" />
-    <ClInclude Include="BOIDS\States\SteerWander.h" />
-    <ClInclude Include="BOIDS\SteeringBehavior.h" />
-    <ClInclude Include="BOIDS\SteeringBehaviorManager.h" />
-    <ClInclude Include="BOIDS\SteeringControl.h" />
-    <ClInclude Include="BOIDS\Utils.h" />
+    <ClInclude Include="BehaviorSystem\States\SteerApproach.h" />
+    <ClInclude Include="BehaviorSystem\States\SteerArrive.h" />
+    <ClInclude Include="BehaviorSystem\States\SteerWander.h" />
+    <ClInclude Include="BehaviorSystem\SteeringBehavior.h" />
+    <ClInclude Include="BehaviorSystem\SteeringBehaviorManager.h" />
+    <ClInclude Include="BehaviorSystem\SteeringControl.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameSession.h" />
     <ClInclude Include="Ship.h" />

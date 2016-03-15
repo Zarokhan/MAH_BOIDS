@@ -1,9 +1,8 @@
 #pragma once
 #include "SFML\Graphics.hpp"
+#include "../utils.h"
 #include "SteeringBehavior.h"
 #include <vector>
-#include <ctime>
-#include <cstdlib>
 
 class SteeringControl;
 
@@ -21,11 +20,6 @@ public:
 	virtual bool CombineForceWeighted(sf::Vector2f& steeringForce, float weight);
 	virtual bool CombineForcePrioritySum(sf::Vector2f& steeringForce, float weight);
 	virtual bool CombineForcePriorityDithered(sf::Vector2f& steeringForce, float weight, float randChance);
-
-	inline const float randflt(int max = 1)
-	{
-		return static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / max));
-	}
 
 protected:
 	std::vector<SteeringBehavior*> behaviors;

@@ -24,19 +24,19 @@
     <ClCompile Include="Ship.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BOIDS\SteeringBehaviorManager.cpp">
+    <ClCompile Include="BehaviorSystem\States\SteerApproach.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BOIDS\SteeringControl.cpp">
+    <ClCompile Include="BehaviorSystem\States\SteerArrive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BOIDS\States\SteerApproach.cpp">
+    <ClCompile Include="BehaviorSystem\States\SteerWander.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BOIDS\States\SteerWander.cpp">
+    <ClCompile Include="BehaviorSystem\SteeringBehaviorManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BOIDS\States\SteerArrive.cpp">
+    <ClCompile Include="BehaviorSystem\SteeringControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,25 +53,25 @@
     <ClInclude Include="Ship.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\SteeringBehavior.h">
+    <ClInclude Include="BehaviorSystem\States\SteerApproach.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\SteeringBehaviorManager.h">
+    <ClInclude Include="BehaviorSystem\States\SteerArrive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\SteeringControl.h">
+    <ClInclude Include="BehaviorSystem\States\SteerWander.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\Utils.h">
+    <ClInclude Include="BehaviorSystem\SteeringBehavior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\States\SteerApproach.h">
+    <ClInclude Include="BehaviorSystem\SteeringBehaviorManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\States\SteerWander.h">
+    <ClInclude Include="BehaviorSystem\SteeringControl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BOIDS\States\SteerArrive.h">
+    <ClInclude Include="Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

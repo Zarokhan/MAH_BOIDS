@@ -2,7 +2,8 @@
 #include "SFML\Audio.hpp"
 #include "Window.h"
 #include "Ship.h"
-#include "BOIDS\SteeringControl.h"
+#include "Utils.h"
+#include "BehaviorSystem\SteeringControl.h"
 #include <vector>
 
 class GameSession
