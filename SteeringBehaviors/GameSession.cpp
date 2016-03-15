@@ -72,6 +72,27 @@ void GameSession::FunnyPart()
 	}
 }
 
+sf::Vector2f GameSession::Separate(std::vector<SteeringControl*> boids)
+{
+	float desiredseparation = 25.f;
+	sf::Vector2f steer;
+	for (int i = 0; i < boids.size(); i++)
+	{
+		//float d = utils::
+	}
+	return sf::Vector2f();
+}
+
+sf::Vector2f GameSession::Align(std::vector<SteeringControl*> boids)
+{
+	return sf::Vector2f();
+}
+
+sf::Vector2f GameSession::Cohesion(std::vector<SteeringControl*> boids)
+{
+	return sf::Vector2f();
+}
+
 GameSession::~GameSession()
 {
 	delete camera;

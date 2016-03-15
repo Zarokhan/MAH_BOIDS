@@ -28,3 +28,7 @@
 
 *.tlog
 *.log
+*.suo
+*.pdb
+*.iobj
+*.ipdb
