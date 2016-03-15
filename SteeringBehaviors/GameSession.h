@@ -22,6 +22,10 @@ public:
 	void ClearShips();
 	void FunnyPart();
 
+	sf::Vector2f Separate(std::vector<SteeringControl*> boids);
+	sf::Vector2f Align(std::vector<SteeringControl*> boids);
+	sf::Vector2f Cohesion(std::vector<SteeringControl*> boids);
+
 	~GameSession();
 
 };
