@@ -7,10 +7,10 @@ SteerApproach::SteerApproach(SteeringControl* control, char* name) : SteeringBeh
 
 bool SteerApproach::Update(float dt, sf::Vector2f & totalForce)
 {
-	//sf::Vector2f temp = *Mouse - parent->ship->getPosition();
-	//float distance = utils::VectorLenght(temp);
-	//if (distance < 150)
-	//	return false;
+	sf::Vector2f temp = *Mouse - parent->ship->getPosition();
+	float distance = utils::VectorLenght(temp);
+	if (distance < 200)
+		return false;
 
 	bool adjustment = false;
 	bool found = FindTarget();

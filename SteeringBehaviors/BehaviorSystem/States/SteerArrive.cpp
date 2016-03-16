@@ -2,7 +2,7 @@
 
 SteerArrive::SteerArrive(SteeringControl * control, char * name) : SteeringBehavior(control, name)
 {
-	weight = 0.3f;
+	weight = 0.05f;
 }
 
 #define AI_MAX_SPEED_TRY 10

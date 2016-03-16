@@ -3,7 +3,7 @@
 
 void Ship::init()
 {
-	maxSpeed = 2.f;
+	maxSpeed = 5.f;
 	maxForce = 0.03f;
 }
 

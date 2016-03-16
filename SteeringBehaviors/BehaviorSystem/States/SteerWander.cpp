@@ -3,8 +3,8 @@
 SteerWander::SteerWander(SteeringControl * control, char * name) : SteeringBehavior(control, name)
 {
 	weight = 0.3f;
-	wanderCircleDistance = 500.f;
-	wanderCircleRadius = 500.f;
+	wanderCircleDistance = 100.f;
+	wanderCircleRadius = 130.f;
 }
 
 bool SteerWander::Update(float dt, sf::Vector2f & totalForce)
@@ -28,6 +28,7 @@ bool SteerWander::Update(float dt, sf::Vector2f & totalForce)
 	if (distanceToObject)
 	{
 		totalForce += steeringForce;
+		//parent->ship->ApplyForce(steeringForce);
 		adjustment = true;
 		targetPosition = target;
 	}

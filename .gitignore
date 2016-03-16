@@ -32,3 +32,5 @@
 *.pdb
 *.iobj
 *.ipdb
+*.idb
+*.ilk
