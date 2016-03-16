@@ -8,6 +8,15 @@ class SteeringControl;
 
 class SteeringBehaviorManager
 {
+protected:
+	std::vector<SteeringBehavior*> behaviors;
+	std::vector<SteeringBehavior*> active;
+	std::vector<float> activeForce;
+	int numBehaviors;
+	SteeringControl* parent;
+	sf::Vector2f totalSteeringForce;
+	float maxSteeringForce;
+
 public:
 	SteeringBehaviorManager(SteeringControl* control = NULL);
 	virtual void Update(float dt);
@@ -21,12 +30,5 @@ public:
 	virtual bool CombineForcePrioritySum(sf::Vector2f& steeringForce, float weight);
 	virtual bool CombineForcePriorityDithered(sf::Vector2f& steeringForce, float weight, float randChance);
 
-protected:
-	std::vector<SteeringBehavior*> behaviors;
-	std::vector<SteeringBehavior*> active;
-	std::vector<float> activeForce;
-	int numBehaviors;
-	SteeringControl* parent;
-	sf::Vector2f totalSteeringForce;
-	float maxSteeringForce;
+	~SteeringBehaviorManager();
 };

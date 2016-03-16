@@ -39,3 +39,8 @@ void SteeringControl::Draw()
 void SteeringControl::Reset()
 {
 }
+
+SteeringControl::~SteeringControl()
+{
+	delete ship;
+}

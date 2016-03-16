@@ -9,24 +9,22 @@
 class GameSession
 {
 private:
-	sf::View* camera;
-	std::vector<SteeringControl*> controls;
+	sf::View* camera;						// Camera view
+	std::vector<SteeringControl*> controls;	// Ships for steering behavior
+	std::vector<Ship*> flock;				// Ships for flocking
 
+	// ---- Funny part
 	sf::Music* music;
 	bool playingMusic;
 	GameObject* bg;
+	void FunnyPart();
 public:
 	GameSession();
 
 	void Update(float dt);
+	void RunEvents(sf::Event& e);
 	void Draw();
 	void ClearShips();
-	void FunnyPart();
-
-	sf::Vector2f Separate(std::vector<SteeringControl*> boids);
-	sf::Vector2f Align(std::vector<SteeringControl*> boids);
-	sf::Vector2f Cohesion(std::vector<SteeringControl*> boids);
 
 	~GameSession();
-
 };

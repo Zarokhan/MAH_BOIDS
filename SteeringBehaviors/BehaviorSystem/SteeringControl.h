@@ -6,6 +6,9 @@ class SteeringBehaviorManager;
 class SteeringControl
 {
 public:
+	Ship* ship;
+
+public:
 	SteeringControl(Ship* ship) : ship(ship) { Init(); }
 	
 	void Update(float dt);
@@ -14,7 +17,7 @@ public:
 	void Draw();
 	void Reset();
 
-	Ship* ship;
+	~SteeringControl();
 protected:
 	SteeringBehaviorManager* manager;
 };

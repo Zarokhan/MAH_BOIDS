@@ -5,6 +5,14 @@
 class SteeringBehavior
 {
 public:
+	SteeringControl* parent;
+	float weight;
+	float propbability;
+	char name[30];
+	bool disable;
+	float lastForceMagApplied;
+
+public:
 	SteeringBehavior(SteeringControl* control, char* name = NULL) : parent(control)
 	{
 		//memcpy(this->name, name, strlen(name) + 1);
@@ -41,11 +49,4 @@ public:
 		else
 			result = sf::Vector2f();
 	}
-
-	SteeringControl* parent;
-	float weight;
-	float propbability;
-	char name[30];
-	bool disable;
-	float lastForceMagApplied;
 };

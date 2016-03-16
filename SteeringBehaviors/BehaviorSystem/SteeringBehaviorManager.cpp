@@ -103,3 +103,13 @@ bool SteeringBehaviorManager::CombineForcePriorityDithered(sf::Vector2f & steeri
 
 	return retVal;
 }
+
+SteeringBehaviorManager::~SteeringBehaviorManager()
+{
+	for (auto i = 0; i < behaviors.size(); i++)
+		delete behaviors[i];
+	behaviors.clear();
+	for (auto i = 0; i < active.size(); i++)
+		delete active[i];
+	active.clear();
+}

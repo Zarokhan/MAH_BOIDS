@@ -29,6 +29,9 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszA
 				Window->close();
 				break;
 			}
+
+			if (Session != NULL)
+				Session->RunEvents(event);
 		}
 
 		while (deltaTime > ups)

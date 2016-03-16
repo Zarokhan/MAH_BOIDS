@@ -4,8 +4,8 @@
 #define WINDOW_TITLE "BOIDS - MAH - Robin Andersson"
 #define WINDOW_WIDTH 1280
 #define WINDOW_HEIGHT 720
-#define CAMERA_WIDTH 1920
-#define CAMERA_HEIGHT 1080
+#define CAMERA_WIDTH 1920*2
+#define CAMERA_HEIGHT 1080*2
 
 extern sf::RenderWindow* Window;
 extern sf::Vector2f* Mouse;
