@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClCompile Include="BehaviorSystem\States\SteerApproach.cpp" />
     <ClCompile Include="BehaviorSystem\States\SteerArrive.cpp" />
+    <ClCompile Include="BehaviorSystem\States\SteerPursuit.cpp" />
     <ClCompile Include="BehaviorSystem\States\SteerWander.cpp" />
     <ClCompile Include="BehaviorSystem\SteeringBehaviorManager.cpp" />
     <ClCompile Include="BehaviorSystem\SteeringControl.cpp" />
@@ -155,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="BehaviorSystem\States\SteerApproach.h" />
     <ClInclude Include="BehaviorSystem\States\SteerArrive.h" />
+    <ClInclude Include="BehaviorSystem\States\SteerPursuit.h" />
     <ClInclude Include="BehaviorSystem\States\SteerWander.h" />
     <ClInclude Include="BehaviorSystem\SteeringBehavior.h" />
     <ClInclude Include="BehaviorSystem\SteeringBehaviorManager.h" />

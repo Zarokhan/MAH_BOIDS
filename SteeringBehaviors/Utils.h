@@ -21,6 +21,11 @@ namespace utils
 		return static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / max));
 	}
 
+	static float Dot(const sf::Vector2f &a, const sf::Vector2f &b)
+	{
+		return a.x*b.x + a.y*b.y;
+	}
+
 	const static float VectorLenght(const sf::Vector2f& p)
 	{
 		return std::sqrtf(std::powf(p.x, 2) + std::powf(p.y, 2));

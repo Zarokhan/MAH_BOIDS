@@ -3,13 +3,15 @@
 #include "States\SteerApproach.h"
 #include "States\SteerWander.h"
 #include "States\SteerArrive.h"
+#include "States\SteerPursuit.h"
 
 void SteeringControl::Init()
 {
 	manager = new SteeringBehaviorManager(this);
-	manager->AddBehaviour(new SteerApproach(this));
+	//manager->AddBehaviour(new SteerApproach(this));
 	manager->AddBehaviour(new SteerWander(this));
-	manager->AddBehaviour(new SteerArrive(this));
+	//manager->AddBehaviour(new SteerArrive(this));
+	manager->AddBehaviour(new SteerPursuit(this));
 }
 
 void SteeringControl::Update(float dt)
